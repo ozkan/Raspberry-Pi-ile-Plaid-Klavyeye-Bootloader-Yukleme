@@ -114,7 +114,23 @@ Kişiselleştirilmiş keymap dosyalarının nasıl üretildiğini öğrenmek iç
 make dm9records/plaid:defaut:flash
 ```
 ---
+## Atmega328'e Breadboard Üzerinde Bootloader Yükleme 
+Plaid veya başka bir klavyenin mikrodenetleyicisine (atmega328p) breadboard üzerinde bootloader yüklemek için devreyi aşağıdaki resimde gösterildiği gibi kurun.
+### Gerekli Bileşenler: 
+- Rarpberry Pi  (2, 3, 4 veya Zero)
+- Breadboard
+- 16.000 MHz Kristal
+- 22pf Kondansatör x2
+- 10kΩ Direnç
+- Jumper Kablo
 
+### Bağlantı Şeması:
+
+![](raspi328p.png)
+
+ Bağlantıları yaptıktan sonra yukarıdaki bootloader yükleme adımlarını takip edin. Avrdude yazılımında bir değişiklik yapılmayacaktır.
+
+---
 Kaynaklar:
 
 - https://www.algorist.co.uk/post/how-to-burn-the-plaid-keyboard-bootloader-using-arduino-nano/
